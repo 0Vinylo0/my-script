@@ -10,11 +10,10 @@
 
 lista = ["pedro", "juan", "manolo"]
 for i in lista:
-    alumno = i
-    print(f"{alumno}")
+    print(f"{i}")
     input("presente, si o no: ")
-    if alumno == "si":
-        lista.append(f"{alumno}: presente")
-    elif alumno == "no":
-        lista.append(f"{alumno}: no presente")
-print (f"{alumno}")
+    if i == "si":
+        lista.append(f"{i}: presente")
+    elif i == "no":
+        lista.append(f"{i}: no presente")
+print (f"{i}")
