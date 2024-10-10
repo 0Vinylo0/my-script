@@ -13,11 +13,11 @@ while True:
             if new_product == i:
                 print(f"{new_product} ya existe")
                 add = input("Cuantos quieres añadir: ")
-                stock[i].append(new_product)
+                stock[i].append(add)
             else:
                 inventario.append(new_product)
                 add = input("Cuantos quieres añadir: ")
-                stock[i].append(new_product)
+                stock[i].append(add)
     elif opcion == 2:
         print("Que producto quieres eliminar: ")
     elif opcion == 3:
