@@ -13,7 +13,7 @@ for i in lista:
     print(f"{i}")
     input("presente, si o no: ")
     if i == "si":
-        lista.append(f"{i}: presente")
+        lista.append(i + ": presente")
     elif i == "no":
-        lista.append(f"{i}: no presente")
+        lista.append(i + ": no presente")
 print (f"{i}")
