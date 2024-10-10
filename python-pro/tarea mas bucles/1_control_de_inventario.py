@@ -10,7 +10,7 @@ while True:
     if opcion == 1:
         new_product = input("Que producto quires añadir: ")
         for i in inventario:
-            if (f"{new_product} == {i}"):
+            if (f"{new_product}") == (f"{i}"):
                 print(f"{new_product} ya existe")
                 add = input("Cuantos quieres añadir: ")
                 stock[i].append(add)
