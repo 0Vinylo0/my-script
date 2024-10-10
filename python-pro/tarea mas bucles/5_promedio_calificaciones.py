@@ -8,6 +8,6 @@ for i in alumnos:
     print(f"{i} tiene un {notas[contador]}")
     contador += 1
 suma_calificacion = 0
-for i in len(alumnos):
+for i in range(0,len(alumnos),1):
     suma_calificacion += notas[i]
 print(f"Nota media es: {suma_calificacion / alumnos}")
