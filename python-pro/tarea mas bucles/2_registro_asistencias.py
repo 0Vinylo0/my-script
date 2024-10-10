@@ -16,5 +16,5 @@ for i in lista:
 
 i = 0
 while (i < len(lista)):
-    print(f"{lista[i]}{asistencia_alumnos}")
+    print(f"{lista[i]} {asistencia_alumnos[i]} esta presente")
     i += 1
