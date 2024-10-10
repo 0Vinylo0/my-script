@@ -1,4 +1,4 @@
-<h3 align="center">Esto es un repositorio que sube automáticamente los script que hago en mi visual o toda clase de código que escribo directamente.</h3>
+<h3 align="center">Esto es un repositorio que sube automáticamente los script que hago en mi visual o toya clase de código que escribo directamente.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=0vinylo0&label=Profile%20views&color=0e75b6&style=flat" alt="0vinylo0" /> </p>
 
