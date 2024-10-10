@@ -9,7 +9,7 @@
 #print(f"{lista}")
 
 lista = ["pedro", "juan", "manolo"]
-for i in range(0,{lista},1):
+for i in lista:
     alumno = i
     print(f"{alumno}")
     input("presente, si o no: ")
