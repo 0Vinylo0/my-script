@@ -12,9 +12,15 @@ def obtener_archivos_repo():
     api_url = f'https://api.github.com/repos/{REPO}/contents/'
     response = requests.get(api_url, headers={'Authorization': f'token {TOKEN}'})
     
+    archivos_repo = {}
     if response.status_code == 200:
-        return {item['path']: item['sha'] for item in response.json() if item['type'] == 'file'}
-    return {}  # Devuelve un diccionario vacío si hay un error
+        for item in response.json():
+            if item['type'] == 'file':
+                archivos_repo[item['path']] = item['sha']
+            elif item['type'] == 'dir':
+                # Llama a la función recursivamente para obtener archivos dentro de las subcarpetas
+                archivos_repo.update(obtener_archivos_repo(item['path']))
+    return archivos_repo
 
 # Función para obtener el SHA del archivo existente
 def obtener_sha_archivo(ruta_repo):
