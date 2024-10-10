@@ -7,9 +7,9 @@ TOKEN = ''  # Reemplaza con tu token
 REPO = ''  # Reemplaza con tu usuario/repo
 DIRECTORIO = ''  # Reemplaza con la ruta donde están tus archivos
 
-# Función para obtener la lista de archivos en el repositorio
-def obtener_archivos_repo():
-    api_url = f'https://api.github.com/repos/{REPO}/contents/'
+# Función para obtener la lista de archivos en el repositorio de manera recursiva
+def obtener_archivos_repo(ruta=''):
+    api_url = f'https://api.github.com/repos/{REPO}/contents/{ruta}'
     response = requests.get(api_url, headers={'Authorization': f'token {TOKEN}'})
     
     archivos_repo = {}
@@ -21,7 +21,6 @@ def obtener_archivos_repo():
                 # Llama a la función recursivamente para obtener archivos dentro de las subcarpetas
                 archivos_repo.update(obtener_archivos_repo(item['path']))
     return archivos_repo  # Devuelve un diccionario con todos los archivos y sus SHAs
-
 
 # Función para obtener el SHA del archivo existente
 def obtener_sha_archivo(ruta_repo):
@@ -99,7 +98,7 @@ def eliminar_archivo(nombre_archivo):
 
 # Recorre el directorio y sube los archivos
 def sincronizar_archivos():
-    # Obtener archivos actuales en el repositorio
+    # Obtener archivos actuales en el repositorio de manera recursiva
     archivos_repo = obtener_archivos_repo()
 
     # Recorre el directorio y sube los archivos
