@@ -3,8 +3,8 @@ notas = []
 for i in alumnos:
     calificacion = int(input(f"Que nota tiene {i}?"))
     notas.append(calificacion)
-for i in alumnos:
-    print(f"{i} tiene un {notas[int(i)]}")
+for i in range(alumnos):
+    print(f"{i} tiene un {notas[i]}")
 suma_calificacion = 0
 for i in range(len(alumnos)):
     suma_calificacion += notas[i]
