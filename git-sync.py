@@ -20,7 +20,8 @@ def obtener_archivos_repo():
             elif item['type'] == 'dir':
                 # Llama a la función recursivamente para obtener archivos dentro de las subcarpetas
                 archivos_repo.update(obtener_archivos_repo(item['path']))
-    return archivos_repo
+    return archivos_repo  # Devuelve un diccionario con todos los archivos y sus SHAs
+
 
 # Función para obtener el SHA del archivo existente
 def obtener_sha_archivo(ruta_repo):
