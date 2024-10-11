@@ -1,4 +1,8 @@
-<h3 align="center">Esto es un repositorio que sube automáticamente los script que hago en mi visual o toya clase de código que escribo directamente.</h3>
+<h3 align="center">Esto es un repositorio que sube automáticamente los script que hago en mi visual o toda clase de código que escribo directamente.</h3>
+
+- Este repo funciona gracias a este [programa](https://github.com/0Vinylo0/my-script/blob/main/git-sync.py) en python, que recorre todo el directorio configurado en el, y comprueba los archivos que existe el en el servidor o los que falte y sube o elimina del repo todo lo que no sea igual ademas que actualiza los archvos.
+
+- Para que se ejecute utilizo crontb haciendo que se actualize cada min.
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=0vinylo0&label=Profile%20views&color=0e75b6&style=flat" alt="0vinylo0" /> </p>
 
