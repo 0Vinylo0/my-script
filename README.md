@@ -1,8 +1,4 @@
-<h3 align="center">Esto es un repositorio que sube automáticamente los script que hago en mi visual o toda clase de código que escribo directamente.</h3>
-
-- Esto funciona gracias a este [codigo](https://github.com/0Vinylo0/my-script/blob/main/git-sync.py) en mi servidor que sube automaticamnete todo archvio que se cree ademas de actualizarlos y s hay algun archivo que no existe dentro del directorio de carpetas automaticamente lo elimina, simplemente tienes que poner el token de github donde corresponde y configurar los directorios de git y los directorios del servidor.
-
-- Luego con crontab hago que se ejecute el codigo cada minuto. Y el codigo recorre el directorio de cartpetas y comparando para subir o eliminar.
+<h3 align="center">Esto es un repositorio que sube automáticamente los script que hago en mi visual o toya clase de código que escribo directamente.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=0vinylo0&label=Profile%20views&color=0e75b6&style=flat" alt="0vinylo0" /> </p>
 
