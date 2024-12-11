@@ -14,5 +14,5 @@ while True:
         print("No me dividas entre zero guapo")
     except EOFError and KeyboardInterrupt:
         print("")
-        print("Saliendo del programa")
+        print("Saliendo del programa...")
         break
